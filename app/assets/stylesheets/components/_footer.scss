@@ -1,0 +1,39 @@
+.footer {
+  height: 16vh;
+  width: 100vw;
+  background-color: #FFFFFF;
+  color: #00020c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social-media-links {
+  width: 30vw;
+  height: 5vh;
+}
+
+.social-media-links ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media-links li {
+  display: inline-flex;
+}
+
+.social-media-links a {
+  color: #8c7766;
+  font-size: 1.1em;
+  &:hover {
+    color: #ba6525;
+  }
+}
+
+.copyright {
+  font-size: 0.6em;
+}
