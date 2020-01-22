@@ -1,1 +1,40 @@
 // Specific CSS for your home-page
+.menu-cont {
+  top: 0vh;
+  position: relative;
+  left: 0;
+  width: 25vw;
+  height: 68vh;
+  background-color: #FFFFFF;
+  color: #00020c;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-around;
+  align-items: center;
+  font-size: 2em;
+  box-shadow: 1px 0px 0px rgba(0,0,0,0.2);
+  border: white 1px solid;
+  font-family: 'Oswald', sans-serif;
+}
+
+.menu-action {
+  width: 100%;
+  height: 50%;
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+// .menu-action ul {
+
+// }
+
+.menu-action li {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+
