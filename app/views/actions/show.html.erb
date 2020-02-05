@@ -1,0 +1,48 @@
+
+
+<div class="home-page">
+  <div class="menu-cont"
+       data-controller="sliders">
+
+    <div class="menu-action">
+      <% @actions.each_with_index do |action, index| %>
+        <div class="action-card"
+             data-action="click->sliders#showIt"
+             data-index="0">
+
+                  <%= action.title  %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="all-readings">
+    <% @actions.each_with_index do |action, index| %>
+
+      <div class="readings"
+           data-target="sliders.readings"
+           data-sliders-index="0">
+        <%= render partial: 'actions/reading', locals: { readings: action.readings, delete_path: Proc.new{|reading_id| reading_path(reading_id) } } %>
+      </div>
+
+    <% end %>
+  </div>
+</div>
+
+
+<div class="menu-cont">
+  <div class="menu-action">
+    <div class="action-card">
+      <a href=""></a> <%= "About" %>
+    </div>
+    <div class="action-card">
+      <%= "Work" %>
+    </div>
+    <div class="action-card">
+        <%= "Art Work" %>
+    </div>
+    <div class="action-card">
+        <%= "Contact" %>
+    </div>
+  </div>
+</div>
+

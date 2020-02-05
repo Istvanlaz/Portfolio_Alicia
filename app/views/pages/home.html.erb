@@ -1,8 +1,31 @@
 <div class="menu-cont">
-  <ul class="menu-action">
+<div class="menu-action"
+     data-controller="sliders">
+
+  <div class="actions">
+    <div class="action-card"
+         data-action="click->sliders#showIt"
+         data-index="0">
+<!--           <i class="new-action fas fa-plus-circle"></i>
+ -->    </div>
+    <% @actions.each_with_index do |action, index| %>
+      <div class="action-card"
+           data-action="click->sliders#showIt"
+           data-index="<%= index+1 %>">
+
+
+          <%= action.title %>
+
+      </div>
+    <% end %>
+  </div>
+  <!-- <ul class="menu-action">
     <li>About</li>
     <li>Work</li>
-    <li>Heart Work</li>
+    <li>Art Work</li>
     <li>Contact</li>
-  </ul>
+  </ul> -->
+  <div class="action-view">
+    <%= render 'shared/action' %>
+  </div>
 </div>

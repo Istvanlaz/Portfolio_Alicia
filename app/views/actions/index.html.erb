@@ -1,0 +1,40 @@
+<div class="home-page">
+  <div class="menu-cont">
+    <div class="menu-action">
+      <div class="action-card"
+           data-action="click->sliders#showIt"
+           data-index="1">About</div>
+      <div class="action-card"
+           data-action="click->sliders#showIt"
+           data-index="2">Work</div>
+      <div class="action-card"
+           data-action="click->sliders#showIt"
+           data-index="3">Art Work</div>
+      <div class="action-card"
+           data-action="click->sliders#showIt"
+           data-index="4">Contact</div>
+    </div>
+  </div>
+  <div class="action-view">
+    <div class="readings"
+         data-target="sliders.readings"
+         data-sliders-index="1">
+      <%= render partial: "shared/#{@actions.find(1).title.split.join.downcase}", locals: {actions: @actions} %>
+    </div>
+    <div class="readings"
+         data-target="sliders.readings"
+         data-sliders-index="2">
+      <%= render partial: "shared/#{@actions.find(2).title.split.join.downcase}", locals: {actions: @actions} %>
+    </div>
+    <div class="readings"
+         data-target="sliders.readings"
+         data-sliders-index="3">
+      <%= render partial: "shared/#{@actions.find(3).title.split.join.downcase}", locals: {actions: @actions} %>
+    </div>
+    <div class="readings"
+         data-target="sliders.readings"
+         data-sliders-index="4">
+      <%= render partial: "shared/#{@actions.find(4).title.split.join.downcase}", locals: {actions: @actions} %>
+    </div>
+  </div>
+</div>
